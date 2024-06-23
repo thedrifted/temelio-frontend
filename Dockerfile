@@ -1,10 +1,10 @@
 FROM node:18-alpine as build
 
-RUN apk add --no-cache git
-
 WORKDIR /app
 
-RUN git clone git@github.com:thedrifted/temelio-frontend.git .
+COPY ./frontend /app
+
+WORKDIR /app
 
 RUN npm install
 
