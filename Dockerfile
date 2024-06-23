@@ -2,7 +2,7 @@ FROM node:18-alpine as build
 
 WORKDIR /app
 
-COPY ./frontend /app
+COPY . .
 
 WORKDIR /app
 
